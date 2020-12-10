@@ -4,9 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // 判断是算式识别还是手写体识别
-    isFormula: false,
-    cancel: false,
+    // 预览图片的地址
+    img_src: "",
     // 图片的src
     image_src_list: [
       "../images/0.png",
@@ -31,30 +30,17 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    // 根据传过来的字符串显示正确的算式
-
-  },
-  // 拍照函数
-  callCamera: function() {
-    wx.navigateTo({
-      url: '../camera/camera',
-    })
-  },
-  // 调用相册函数
+  // 图片选择
   callPhoto: function() {
+    let that = this;
     wx.chooseImage({
-      count: 0,
-    })
-  },
-  callMenu: function() {
-    this.setData({
-      isFormula: true
-    })
-  },
-  cancel: function() {
-    this.setData({
-      isFormula: false
+      count: 1,
+      success(result) {
+        const tempFilePath = result.tempFilePaths;
+        that.setData({
+          img_src: tempFilePath
+        })
+      }
     })
   }
 })

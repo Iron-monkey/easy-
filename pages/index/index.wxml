@@ -1,18 +1,10 @@
 <view class="body">
   <image src="../images/R.jpg" mode="WIDTHfIX"></image>
-  <button class="formula opacity" type="default" bindtap="callMenu">算式识别</button>
-<button class="hand_made opacity" type="default" bindtap="callMenu">手写体识别</button>
-<block wx:if="{{isFormula}}">
-  <!-- 算式识别弹窗 -->
-  <view class="formula_picker">
-    <view class="formula_picker_title">
-      请选择图片来源
-    </view>
-    <view class="formula_picker_type">
-      <view class="camera bc" bindtap="callCamera">相机</view>
-      <view class="photo bc" bindtap="callPhoto">相册</view>
-    </view>
-    <view class="cancel" bindtap="cancel">取消</view>
+  <button class="formula opacity" type="default" bindtap="callPhoto">算式识别</button>
+  <button class="hand_made opacity" type="default" bindtap="callPhoto">手写体识别</button>
+  <!-- 图片预览区域 -->
+  <text>预览</text>
+  <view class="img_preview">
+    <image src="{{img_src}}" mode="widthFix"></image>
   </view>
-</block>
 </view>
