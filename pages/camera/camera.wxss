@@ -1,0 +1,7 @@
+.preview {
+  text-align: center;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+}

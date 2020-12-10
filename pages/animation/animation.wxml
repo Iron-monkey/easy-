@@ -1,0 +1,10 @@
+<!-- 模拟画布 -->
+<view class="canvasX">
+  <view class="demo" animation="{{ani}}">
+    <image mode="fiDthFix" src="../images/2.png"></image>
+  </view>
+  <view class="demo" animation="{{ani}}">
+    <image mode="fiDthFix" src="../images/2.png"></image>
+  </view>
+</view>
+<button bindtap="change">点我变化</button>
