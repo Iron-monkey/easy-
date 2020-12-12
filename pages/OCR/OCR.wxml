@@ -1,0 +1,9 @@
+
+<!-- 识别历史 -->
+<view class="OCR_history" bindtap="ldentifyHistory">
+  识别历史
+  <image src="../../icon/右箭头.png" mode="heightFix"></image>
+</view>
+<view class="camera" bindtap="choosePhoto" data-photo_src="{{photo_src}}">
+  <image src="../../icon/camera (1).png" mode="widthFix" animation="{{ani}}"></image>
+</view>

@@ -1,0 +1,11 @@
+<!-- 照片预览区域 -->
+<view class="img_preview">
+  <image src="{{img_preview_src}}"></image>
+</view>
+<view class="btn">
+  <view class="again btn_1" bindtap="chooseImg">重新拍摄</view>
+  <view class="doit btn_1">批改</view>
+</view>
+<view class="resultShow">
+  1+2=3
+</view>

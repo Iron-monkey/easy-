@@ -1,0 +1,6 @@
+page {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://s3.ax1x.com/2020/12/12/rEOyPe.jpg);
+  background-size: 100% 100%;
+}

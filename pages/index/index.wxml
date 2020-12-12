@@ -1,10 +1,10 @@
-<view class="body">
-  <image src="../images/R.jpg" mode="WIDTHfIX"></image>
-  <button class="formula opacity" type="default" bindtap="callPhoto">算式识别</button>
-  <button class="hand_made opacity" type="default" bindtap="callPhoto">手写体识别</button>
-  <!-- 图片预览区域 -->
-  <text>预览</text>
-  <view class="img_preview">
-    <image src="{{img_src}}" mode="widthFix"></image>
+<view class="box">
+  <view class="practice same" bindtap="doPractice">
+    <image src="https://s3.ax1x.com/2020/12/12/rVDa4g.png" mode="widthFix"></image>
+    <text>做练习</text>
+  </view>
+  <view class="wrongSet same" bindtap="wrongSet">
+    <image src="https://s3.ax1x.com/2020/12/12/rVsQOI.png" mode="widthFix"></image>
+    <text>错题本</text>
   </view>
 </view>

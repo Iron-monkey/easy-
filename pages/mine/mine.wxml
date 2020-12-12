@@ -1,0 +1,22 @@
+<view class="Info">
+  <view class="avatar">
+    <image src="../../icon/头像.png" mode="widthFix"></image>
+  </view>
+  <view class="textInfo">
+    <view class="name">Yarmy</view>
+    <view class="grade">2</view>
+  </view>
+</view>
+
+<view class="help list">
+  使用帮助
+  <view class="right">
+    <image src="../../icon/右箭头.png" mode="widthFix"></image>
+  </view>
+</view>
+<view class="config list">
+  设置
+  <view class="right">
+    <image src="../../icon/右箭头.png" mode="widthFix"></image>
+  </view>
+</view>

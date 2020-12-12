@@ -1,15 +1,42 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/animation/animation",
-    "pages/camera/camera"
+    "pages/OCR/OCR",
+    "pages/mine/mine",
+    "pages/resultShow/resultShow",
+    "pages/doPractice/doPractice",
+    "pages/wrongSet/wrongSet",
+    "pages/history/history"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "算式识别",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "练习",
+      "iconPath": "icon/练习.png",
+      "selectedIconPath": "icon/练习ed.png"
+      },
+      {
+      "pagePath": "pages/OCR/OCR",
+      "text": "识别批改",
+      "iconPath": "icon/识别批改.png",
+      "selectedIconPath": "icon/识别批改ed.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/我的.png",
+        "selectedIconPath": "icon/我的ed.png"
+        }
+    ],
+    "selectedColor": "#1296db"
+  }
 }

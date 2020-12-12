@@ -1,4 +1,4 @@
-// pages/camera/camera.js
+// pages/mine/mine.js
 Page({
 
   /**
