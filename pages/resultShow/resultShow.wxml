@@ -4,8 +4,8 @@
 </view>
 <view class="btn">
   <view class="again btn_1" bindtap="chooseImg">重新拍摄</view>
-  <view class="doit btn_1">批改</view>
+  <view class="doit btn_1" bindtap="getIt">批改</view>
 </view>
 <view class="resultShow">
-  1+2=3
+  {{viewData}}
 </view>
