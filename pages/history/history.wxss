@@ -4,3 +4,36 @@ page {
   background-image: url(https://s3.ax1x.com/2020/12/12/rEOyPe.jpg);
   background-size: 100% 100%;
 }
+/* 清除浮动 */
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+}
+
+.count {
+  height: 50rpx;
+  background-color: #d9d9d9;
+  padding: 0 30rpx;
+}
+.count text {
+  color: #08979c;
+}
+.herader {
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #fff;
+}
+.herader text {
+  margin: 0 40rpx;
+}
+.img {
+
+}
+.img image {
+  width: 33.3%;
+  float: left;
+  margin: 20rpx 40rpx; 
+} 

@@ -5,7 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    all: 4,
+    // 批改记录
+    recorde: [
+      {
+        date: "12月12日",
+        week: "星期六",
+        workSrc: [
+          "https://s3.ax1x.com/2020/12/23/r6Pain.jpg"
+        ]
+      },
+      {
+        date: "12月11日",
+        week: "星期五",
+        workSrc: [
+          "https://s3.ax1x.com/2020/12/23/r6PNIs.jpg",
+          "https://s3.ax1x.com/2020/12/23/r6Ptaj.jpg",
+          "https://s3.ax1x.com/2020/12/23/r6PYZQ.jpg"
+        ]
+      }
+    ]
   },
 
   /**

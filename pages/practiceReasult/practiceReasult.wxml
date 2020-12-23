@@ -1,2 +1,14 @@
-<!--pages/practiceReasult/practiceReasult.wxml-->
-<text>pages/practiceReasult/practiceReasult.wxml</text>
+<view class="formulaPreview" wx:for="{{formula}}" wx:key="this">
+  {{item}}={{done[index]}}
+  <image src="{{done[index] === anwser[index] ? '../../icon/对.png' : '../../icon/错.png'}}" mode="widthFix"></image>
+  <block wx:if="{{done[index] === anwser[index]}}">
+    <text style="color: #03a9f4">你真棒！！！</text>
+  </block>
+  <block wx:elif="{{done[index] !== anwser[index]}}">
+    <text>正确答案是：{{anwser[index]}}</text>
+  </block>
+</view>
+<view class="choose">
+  <navigator url="../../pages/doPractice/doPractice" class="continue">继续练习</navigator>
+  <!-- <navigator url="../../pages/index/index" class="exit">退出</navigator> -->
+</view>

@@ -7,18 +7,31 @@ Page({
   data: {
     doneNum: 1,
     allNum: 10,
-    formula: "5+3",
+    formulaList: ["5+3", "4+9","3+1", "2+8", "1+8", "8+7", "9+5", "5+8", "9+6", "6+7"],
+    doneList: [8, 13, 4, 10, 9, 15, 14, 13, 15, 13],
+    formula: "",
     reasult: 0,
     reasultList: [],
     viewText: "下一题",
     content: "",
+    focus: true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      formula: this.data.formulaList[0]
+    });
+    wx.setStorage({
+      data: this.data.doneList,
+      key: 'doneList',
+    });
+    wx.setStorage({
+      data: this.data.formulaList,
+      key: 'formulaList',
+    })
   },
   // 当input失去焦点时保存结果
   saveReasult: function (e) {
@@ -34,6 +47,11 @@ Page({
     reasultList.push(parseInt(this.data.reasult));
     console.log(reasultList);
     if (this.data.doneNum === 10) {
+      // 将结果存入缓存
+      wx.setStorage({
+        data: that.data.reasultList,
+        key: "reasultList",
+      })
       wx.navigateTo({
         url: '../../pages/practiceReasult/practiceReasult',
       })
@@ -41,12 +59,14 @@ Page({
       that.setData({
         viewText: "完成",
         doneNum: parseInt(that.data.doneNum) + 1,
+        formula: this.data.formulaList[parseInt(that.data.doneNum)],
         reasultList: reasultList
       });
     } 
     else {
       this.setData({
         doneNum: parseInt(that.data.doneNum) + 1,
+        formula: this.data.formulaList[parseInt(that.data.doneNum)],
         reasultList: reasultList
       })
     }
@@ -59,52 +79,10 @@ Page({
       content: ""
     })
   },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  // input聚焦
+  change: function(){
+    this.setData({
+      focus: true
+    })
   }
 })

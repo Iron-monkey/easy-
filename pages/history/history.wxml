@@ -1,0 +1,14 @@
+<view class="count">
+  已批改<text>{{all}}</text>页题
+</view>
+<view class="recorde clearfix" wx:for="{{recorde}}" wx:key="date"> 
+  <view class="herader">
+    <text>{{item.date}}</text>
+    <text>{{item.week}}</text>
+  </view>
+  <view class="img">
+    <block wx:for="{{item.workSrc}}" wx:key="id">
+      <image src="{{item}}" mode="widthFix"></image>
+    </block>
+  </view>
+</view> 
