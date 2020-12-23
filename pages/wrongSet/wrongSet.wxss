@@ -4,3 +4,40 @@ page {
   background-image: url(https://s3.ax1x.com/2020/12/12/rEO68H.jpg);
   background-size: 100% 100%;
 }
+.box {
+  margin: 50rpx auto;
+  border: 1px solid #cccccc;
+  width: 90%;
+  height: 200rpx;
+  background-color: #fff;
+}
+.formula {
+  width: 100%;
+  height: 130rpx;
+  padding-left: 40rpx;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.formula view {
+  margin: 8rpx 0;
+  font-size: 24rpx;
+}
+.formula view:first-child{
+  color: red;
+}
+.formula view:last-child {
+  color: green;
+}
+.info {
+  padding: 0 30rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24rpx;
+  box-sizing: border-box;
+}
+.info view {
+  height: 70rpx;
+  line-height: 70rpx;
+}

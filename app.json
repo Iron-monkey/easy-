@@ -6,7 +6,10 @@
     "pages/resultShow/resultShow",
     "pages/doPractice/doPractice",
     "pages/wrongSet/wrongSet",
-    "pages/history/history"
+    "pages/history/history",
+    "pages/practice/practice",
+    "pages/practiceReasult/practiceReasult",
+    "pages/wrongDetail/wrongDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

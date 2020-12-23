@@ -1,1 +1,6 @@
-
+<view class="box">
+  <view class="practice" wx:for="{{listData}}" wx:key="text" bindtap="choosePractice" data-index="{{index}}">
+    <image src="{{item.iconSrc}}" mode="widthFix"></image>
+    <text>{{item.text}}</text>
+  </view>
+</view>

@@ -1,17 +1,11 @@
-// pages/wrongSet/wrongSet.js
+// pages/wrongDetail/wrongDetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    wrongSet: [
-      {
-        formula: "5+3",
-        type: "1-10的加法",
-        date: "12月1日"
-      }
-    ]
+
   },
 
   /**

@@ -62,8 +62,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/resultShow/resultShow",
-          "pathName": "pages/resultShow/resultShow",
+          "name": "pages/practice/practice",
+          "pathName": "pages/practice/practice",
           "query": "",
           "scene": null
         }

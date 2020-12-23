@@ -4,3 +4,19 @@ page {
   background-image: url(https://s3.ax1x.com/2020/12/12/rEOc2d.jpg);
   background-size: 100% 100%;
 }
+
+.box {
+  height: 100%;
+  margin: 50rpx auto;
+}
+
+.practice {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  margin: 60rpx; 
+}
+
+.practice image {
+  width: 100%;
+}

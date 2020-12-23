@@ -5,7 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    listData: [
+      {
+      iconSrc: "../../icon/QQ图片20201223084353.jpg",
+      text: "1-10的加法"
+      },
+      {
+        iconSrc: "../../icon/QQ图片20201223084353.jpg",
+        text: "1-10的减法"
+      },
+      {
+        iconSrc: "../../icon/QQ图片20201223084353.jpg",
+        text: "1-100的加法"
+      },
+      {
+        iconSrc: "../../icon/QQ图片20201223084353.jpg",
+        text: "1-100的减法"
+      },
+      {
+        iconSrc: "../../icon/QQ图片20201223084353.jpg",
+        text: "表内乘法"
+      },
+      {
+        iconSrc: "../../icon/QQ图片20201223084353.jpg",
+        text: "表内除法"
+      }
+  ]
   },
 
   /**
@@ -14,7 +39,12 @@ Page({
   onLoad: function (options) {
 
   },
-
+  choosePractice: function(e) {
+    const index = e.currentTarget.dataset.index;
+    wx.navigateTo({
+      url: '../../pages/practice/practice',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

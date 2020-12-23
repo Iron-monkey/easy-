@@ -1,1 +1,11 @@
-
+<view class="box" wx:for="{{wrongSet}}" wx:key="date">
+  <view class="formula">
+    {{item.formula}}=（）
+    <view>你的答案:10</view>
+    <view>正确答案:8</view>
+  </view>
+  <view class="info">
+    <view>{{item.type}}</view>
+    <view class="date">{{item.date}}</view>
+  </view>
+</view>

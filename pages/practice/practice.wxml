@@ -1,0 +1,6 @@
+<view class="count">{{doneNum}}/{{allNum}}</view>
+<view class="formula">
+  {{formula}} =
+  <input type="number" class="test" bindblur="saveReasult" focus="focus" value="{{content}}" />
+</view>
+<view class="next" bindtap="nextFormula" >{{viewText}}</view>
